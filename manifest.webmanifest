@@ -10,15 +10,15 @@
   "theme_color": "#07090f",
   "icons": [
     {
-      "src": "./icon.svg",
-      "sizes": "180x180",
-      "type": "image/svg+xml",
+      "src": "https://onyx-island-dune-moon.grok.me/dark-sky-birds-seal.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "./icon.svg",
+      "src": "https://onyx-island-dune-moon.grok.me/dark-sky-birds-seal.jpg",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
