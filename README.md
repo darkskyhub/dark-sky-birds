@@ -12,4 +12,8 @@ https://onyx-island-dune-moon.grok.me/
 
 Home-screen name: Birds.
 
-168 species in the catalogue as at 20 September 2026. Readable list: [catalogue.html](./catalogue.html). Machine list: [catalogue.json](./catalogue.json). Tester notes: [TESTERS.md](./TESTERS.md).
+168 species in the catalogue as at 20 September 2026.
+
+- Species list: [catalogue.csv](./catalogue.csv)
+- Short index: [catalogue.html](./catalogue.html)
+- Tester notes: [TESTERS.md](./TESTERS.md)
