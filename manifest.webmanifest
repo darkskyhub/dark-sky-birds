@@ -1,10 +1,31 @@
 {
   "name": "Dark Sky Birds",
   "short_name": "Birds",
-  "description": "Warrumbungle Mountains and Pilliga Forest field guide. A Dark Sky Hub product.",
+  "description": "Dark Sky Hub field guide for the Warrumbungle Mountains and the Pilliga Forest.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0B1520",
-  "theme_color": "#0B1520",
-  "lang": "en-AU"
+  "orientation": "any",
+  "background_color": "#07090f",
+  "theme_color": "#07090f",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }

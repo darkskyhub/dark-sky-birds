@@ -5,28 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dark Sky Birds</title>
 <meta name="application-name" content="Dark Sky Birds">
-<meta name="description" content="Guest field guide for birds of the Warrumbungle Mountains and the Pilliga Forest. A Dark Sky Hub product.">
-<meta name="theme-color" content="#0B1520">
+<meta name="description" content="Dark Sky Hub field guide for the birds of the Warrumbungle Mountains and the Pilliga Forest.">
+<meta name="theme-color" content="#07090f">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Birds">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-<link rel="apple-touch-icon" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./icon.svg">
 <style>
-  html,body{margin:0;height:100%;background:#0B1520;color:#f3efe4;font-family:Georgia,"Times New Roman",serif}
-  .bar{position:fixed;top:0;left:0;right:0;z-index:2;display:flex;gap:10px;align-items:center;padding:10px 14px;background:#0B1520d9;backdrop-filter:blur(8px);font:13px/1.2 system-ui,sans-serif}
+  html,body{margin:0;height:100%;background:#07090f;color:#f3efe4;font-family:Figtree,system-ui,sans-serif}
+  .bar{position:fixed;top:0;left:0;right:0;z-index:2;display:flex;gap:10px;align-items:center;padding:10px 14px;background:#07090fd9;backdrop-filter:blur(8px);font-size:13px}
   .bar b{letter-spacing:.12em;text-transform:uppercase;font-weight:700}
-  .bar a,.bar button{color:#c4a574;margin-left:auto;background:none;border:0;font:inherit;cursor:pointer;text-decoration:none}
-  iframe{position:fixed;inset:44px 0 0 0;width:100%;height:calc(100% - 44px);border:0;background:#0B1520}
+  .bar button{color:#e8a04a;margin-left:auto;background:none;border:0;font:inherit;cursor:pointer}
+  iframe{position:fixed;inset:44px 0 0 0;width:100%;height:calc(100% - 44px);border:0;background:#07090f}
+  .note{position:fixed;inset:44px 16px auto 16px;font-size:14px;line-height:1.5;color:#c9c2b4}
 </style>
 </head>
 <body>
   <div class="bar">
     <b>Dark Sky Birds</b>
-    <span>Dark Sky Hub · beta</span>
-    <a href="https://onyx-island-dune-moon.grok.me/" target="_blank" rel="noopener">Open full app</a>
+    <span>Dark Sky Hub</span>
+    <button type="button" id="fullBtn">Open full screen</button>
   </div>
-  <iframe id="birdsFrame" title="Dark Sky Birds" src="https://onyx-island-dune-moon.grok.me/?v=20260919" allow="fullscreen; geolocation; microphone; camera"></iframe>
+  <p class="note">Loading Birds.</p>
+  <iframe id="skyFrame" title="Dark Sky Birds" src="https://onyx-island-dune-moon.grok.me/" allow="geolocation; microphone; camera; fullscreen" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <script>
+    document.getElementById('fullBtn').addEventListener('click', function () {
+      var frame = document.getElementById('skyFrame');
+      if (frame.requestFullscreen) frame.requestFullscreen();
+      else if (frame.webkitRequestFullscreen) frame.webkitRequestFullscreen();
+    });
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
 </body>
 </html>
