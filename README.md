@@ -6,7 +6,7 @@ Public tester address, same family as Drive and Tonight:
 
 https://darkskyhub.github.io/dark-sky-birds/
 
-Live build behind that page:
+Live build behind that page (v3, 20 September 2026):
 
 https://onyx-island-dune-moon.grok.me/
 
