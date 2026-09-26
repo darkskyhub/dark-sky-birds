@@ -1,19 +1,7 @@
 # Dark Sky Birds
 
-Dark Sky Hub field guide for the Warrumbungle Mountains and the Pilliga Forest.
+Public door: https://darkskyhub.github.io/dark-sky-birds/
 
-Public tester address, same family as Drive and Tonight:
+Live edit host: https://onyx-island-dune-moon.grok.me/
 
-https://darkskyhub.github.io/dark-sky-birds/
-
-Live build behind that page (v3, 20 September 2026):
-
-https://onyx-island-dune-moon.grok.me/
-
-Home-screen name: Birds.
-
-168 species in the catalogue as at 20 September 2026.
-
-- Species list: [catalogue.csv](./catalogue.csv)
-- Short index: [catalogue.html](./catalogue.html)
-- Tester notes: [TESTERS.md](./TESTERS.md)
+The public door is the app. It is not an iframe.
